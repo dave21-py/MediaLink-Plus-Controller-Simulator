@@ -29,6 +29,9 @@ public class MainWindow {
     private Button btnWireless;
 
     @FXML
+    private Label statusDisplay;
+
+    @FXML
     private void onOnClicked(ActionEvent event){
         if (!systemOn){
             btnOn.setStyle("-fx-background-color: red; -fx-text-fill: black;");
