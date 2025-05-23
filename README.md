@@ -1,4 +1,4 @@
-# MediaLnk-Plus-Controller Simulator
+# MediaLink-Plus-Controller Simulator
 
 <p align="center">
 <img src="logo.png"
