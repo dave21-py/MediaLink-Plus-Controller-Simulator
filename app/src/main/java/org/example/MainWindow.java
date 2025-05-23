@@ -42,6 +42,8 @@ public class MainWindow {
             volDown.setDisable(false);
             volUp.setDisable(false);
 
+            statusDisplay.setText("System ON");
+
             
 
 
@@ -58,6 +60,8 @@ public class MainWindow {
         volDown.setDisable(true);
         volUp.setDisable(true);
 
+        statusDisplay.setText("System OFF");
+
         
 
 
@@ -70,6 +74,7 @@ public class MainWindow {
         PauseTransition pause = new PauseTransition(Duration.millis(100));
         pause.setOnFinished(e -> volUp.setStyle(""));
         pause.play();
+        statusDisplay.setText("Volume: " + volumeLevel);
     }
 
     @FXML
@@ -79,6 +84,7 @@ public class MainWindow {
         PauseTransition pause = new PauseTransition(Duration.millis(100));
         pause.setOnFinished(e -> volDown.setStyle(""));
         pause.play();
+         statusDisplay.setText("Volume: " + volumeLevel);
     }
 
     @FXML
@@ -88,6 +94,7 @@ public class MainWindow {
             btnHdmi.setStyle("-fx-background-color: red; -fx-text-fill: black;");
             btnWireless.setStyle("");
             System.out.println("HDMI MODE");
+            statusDisplay.setText("HDMI Mode");
     }
 }
 
@@ -98,6 +105,7 @@ public class MainWindow {
             btnWireless.setStyle("-fx-background-color: red; -fx-text-fill: black;");
             btnHdmi.setStyle("");
             System.out.println("WIRELESS MODE");
+            statusDisplay.setText("WIRELESS");
     }
 }
 
