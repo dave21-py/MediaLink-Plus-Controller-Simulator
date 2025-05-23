@@ -1,0 +1,32 @@
+.root { 
+    -fx-background-color:white;
+}
+.button{
+    -fx-font-size: 14px;
+    -fx-pref-width: 85px;
+    -fx-pref-height: 60px;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+
+}
+#buttonGrid {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 20;
+}
+#borderBox{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-padding: 20;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-max-width: 215px;
+    -fx-max-height: 500px;
+}
+.extronLabel{
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+}

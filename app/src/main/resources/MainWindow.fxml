@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane fx:id="mainwindowRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainWindow" stylesheets="@MainWindow.css" style="-fx-background-color: #ffffff;">
+<center>
+<VBox alignment="CENTER" spacing="20">
+<StackPane fx:id="borderBox" alignment="CENTER">
+<GridPane fx:id="btnGrid" vgap="10" hgap="10" alignment="CENTER">
+<Button fx:id="btnOn" text="ON" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#onOnClicked"/>
+<Button fx:id="btnOff" text="OFF" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#onOffClicked"/>
+<Button fx:id="volUp" text="VOL +" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#onVolUpClicked"/>
+<Button fx:id="btnHdmi" text="HDMI" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#onHdmiClicked"/>
+<Button fx:id="volDown" text="VOL -" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#onVolDownClicked"/>
+<Button fx:id="btnWireless" text="WIRELESS" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#onWirelessClicked"/>
+</GridPane>
+</StackPane>
+<Region prefHeight="30"/>
+<Label text="Extron" styleClass="extronLabel"/>
+</VBox>
+
+</center>
+</BorderPane>
+
+
+
+
+
+
+
+
