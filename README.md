@@ -19,7 +19,7 @@ The MediaLink-Plus Controller Simulator is a JavaFX-based GUI Application that r
 ### ✨ Simulator Screen
 
 <p align="center">
-<img src="Screenshot 2025-05-23 at 3.15.44 PM.png"
+<img src="Screenshot 2025-05-23 at 9.05.59 PM.png"
 width="400">
 </p>
 
