@@ -7,6 +7,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.animation.PauseTransition;
 import javafx.util.Duration;
+import java.io.IOException;
+import javafx.util.Duration;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 public class MainWindow {
@@ -132,5 +138,20 @@ public class MainWindow {
         volDown.setDisable(true);
         volUp.setDisable(true);
     }
+
+
+    @FXML
+    private void openHelp() {
+    try {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Help.fxml"));
+        Parent helpRoot = loader.load();
+        Stage stage = new Stage();
+        stage.setTitle("AI Assistant");
+        stage.setScene(new Scene(helpRoot));
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
 }
         
