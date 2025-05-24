@@ -1,14 +1,14 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.util.Duration;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Help {
 
@@ -28,10 +28,10 @@ public class Help {
         issueSelector.getItems().addAll("HDMI", "Wireless Display", "No Audio", "Touch Panel Not Responding");
 
         
-        aiResponses.put("HDMI", "AI: If HDMI isn’t displaying, verify the source is powered and the correct input is selected. Try reseating the cable and ensure the resolution is supported.");
-        aiResponses.put("Wireless", "AI: For Miracast, ScreenBeam, or Mac, ensure that both the devices are connected to the same Wifi Network. Restart your casting device. For macOS, use Airplay under Display Settings.");
-        aiResponses.put("No Audio", "AI: Check if the volume is muted on both the device and display. Ensure the audio output is set to HDMI or external speakers.");
-        aiResponses.put("Touch Panel Not Responding", "AI: Restart the panel controller. If unresponsive, check for loose network or power connections. Long-press reset may also help.");
+        aiResponses.put("HDMI", "AI: If HDMI isn’t displaying, verify the source is powered and the correct input is selected. Try reseating the cable and ensure the resolution is supported. Hope this helps😊");
+        aiResponses.put("Wireless", "AI: For Miracast, ScreenBeam, or Mac, ensure that both the devices are connected to the same Wifi Network. Restart your casting device. For macOS, use Airplay under Display Settings. Hope this helps😊");
+        aiResponses.put("No Audio", "AI: Check if the volume is muted on both the device and display. Ensure the audio output is set to HDMI or external speakers. Hope this helps😊");
+        aiResponses.put("Touch Panel Not Responding", "AI: Restart the panel controller. If unresponsive, check for loose network or power connections. Long-press reset may also help. Hope this helps😊");
 
         issueSelector.setOnAction(event -> {
             String selected = issueSelector.getValue();
@@ -48,7 +48,7 @@ public class Help {
         PauseTransition pause = new PauseTransition(Duration.seconds(4));
         pause.setOnFinished(event -> {
             typingLabel.setText("");
-            outputArea.setText(aiResponses.getOrDefault(issue, "AI: For Miracast, ScreenBeam, or Mac, ensure that both the devices are connected to the same Wifi Network. Restart your casting device. For macOS, use Airplay under Display Settings."));
+            outputArea.setText(aiResponses.getOrDefault(issue, "AI: For Miracast, ScreenBeam, or Mac, ensure that both the devices are connected to the same Wifi Network. Restart your casting device. For macOS, use Airplay under Display Settings. Hope this helps😊"));
         });
         pause.play();
     }

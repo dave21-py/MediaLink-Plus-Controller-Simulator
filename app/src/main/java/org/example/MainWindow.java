@@ -1,18 +1,18 @@
 package org.example;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.animation.PauseTransition;
-import javafx.util.Duration;
 import java.io.IOException;
-import javafx.util.Duration;
+
+import javafx.animation.PauseTransition;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 public class MainWindow {
@@ -81,7 +81,7 @@ public class MainWindow {
         PauseTransition pause = new PauseTransition(Duration.millis(100));
         pause.setOnFinished(e -> volUp.setStyle(""));
         pause.play();
-        statusDisplay.setText("Volume: " + volumeLevel);
+        statusDisplay.setText("Volume Increased");
     }
 
     @FXML
@@ -91,7 +91,7 @@ public class MainWindow {
         PauseTransition pause = new PauseTransition(Duration.millis(100));
         pause.setOnFinished(e -> volDown.setStyle(""));
         pause.play();
-         statusDisplay.setText("Volume: " + volumeLevel);
+         statusDisplay.setText("Volume Decreased");
     }
 
     @FXML

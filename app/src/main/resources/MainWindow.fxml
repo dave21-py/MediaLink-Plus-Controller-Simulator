@@ -19,6 +19,7 @@
 </GridPane>
 </StackPane>
 <Region prefHeight="30"/>
+<Button fx:id="helpButton" text="Help" onAction="#openHelp"/>
 <Label text="Extron" styleClass="extronLabel"/>
 </VBox>
 
