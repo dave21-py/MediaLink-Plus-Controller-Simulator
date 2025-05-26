@@ -25,7 +25,7 @@ public class Help {
 
     @FXML
     public void initialize() {
-        issueSelector.getItems().addAll("HDMI", "Wireless Display", "No Audio", "Touch Panel Not Responding");
+        issueSelector.getItems().addAll("HDMI Not Working", "Wireless Display Not Working", "No Audio", "Touch Panel Not Responding");
 
         
         aiResponses.put("HDMI", "AI: If HDMI isn’t displaying, verify the source is powered and the correct input is selected. Try reseating the cable and ensure the resolution is supported. Hope this helps😊");

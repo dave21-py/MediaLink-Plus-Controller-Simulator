@@ -5,7 +5,7 @@
 <?import javafx.geometry.Insets?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Help" spacing="15" alignment="CENTER" >
-<Label text="Your AI Assistant" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+<Label text="Select what type of Problem pookie🥰" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
 <ComboBox fx:id="issueSelector" promptText="Select what type of problem" prefWidth="300" />
 <Label fx:id="typingLabel" text="" style="-fx-font-style: Arial; -fx-text-fill: black;" />
 <TextArea fx:id="outputArea" prefWidth="400" prefHeight="200" wrapText="true"/>
