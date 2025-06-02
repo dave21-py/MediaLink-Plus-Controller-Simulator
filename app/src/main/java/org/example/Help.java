@@ -45,7 +45,7 @@ public class Help {
         typingLabel.setText("AI is typing...");
         outputArea.clear();
 
-        PauseTransition pause = new PauseTransition(Duration.seconds(4));
+        PauseTransition pause = new PauseTransition(Duration.seconds(3));
         pause.setOnFinished(event -> {
             typingLabel.setText("");
             outputArea.setText(aiResponses.getOrDefault(issue, "AI: For Miracast, ScreenBeam, or Mac, ensure that both the devices are connected to the same Wifi Network. Restart your casting device. For macOS, use Airplay under Display Settings. Hope this helps😊"));

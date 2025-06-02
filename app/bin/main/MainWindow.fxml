@@ -7,6 +7,7 @@
 <BorderPane fx:id="mainwindowRoot" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainWindow" stylesheets="@MainWindow.css" style="-fx-background-color: #ffffff;">
 <center>
 <VBox alignment="CENTER" spacing="20">
+<Label fx:id="statusDisplay" text="Welcome...." styleClass="statusDisplay"/>
 <StackPane fx:id="borderBox" alignment="CENTER">
 <GridPane fx:id="btnGrid" vgap="10" hgap="10" alignment="CENTER">
 <Button fx:id="btnOn" text="ON" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#onOnClicked"/>
@@ -18,6 +19,7 @@
 </GridPane>
 </StackPane>
 <Region prefHeight="30"/>
+<Button fx:id="helpButton" text="Help" onAction="#openHelp"/>
 <Label text="Extron" styleClass="extronLabel"/>
 </VBox>
 

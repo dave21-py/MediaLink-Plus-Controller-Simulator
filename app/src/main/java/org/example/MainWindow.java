@@ -38,6 +38,12 @@ public class MainWindow {
     @FXML
     private Label statusDisplay;
 
+    private MediaState mediaState;
+
+    public void setMediaState(MediaState state){
+        this.mediaState = state;
+    }
+
     @FXML
     private void onOnClicked(ActionEvent event){
         if (!systemOn){
@@ -50,6 +56,11 @@ public class MainWindow {
             volUp.setDisable(false);
 
             statusDisplay.setText("System ON");
+
+
+            if(mediaState!= null){
+                mediaState.setPlaying(true);
+            }
 
             
 
@@ -69,6 +80,13 @@ public class MainWindow {
 
         statusDisplay.setText("System OFF");
 
+        if(mediaState!=null){
+            mediaState.setPlaying(false);
+            mediaState.setSourceUrl(null);
+        }
+
+
+
         
 
 
@@ -82,6 +100,10 @@ public class MainWindow {
         pause.setOnFinished(e -> volUp.setStyle(""));
         pause.play();
         statusDisplay.setText("Volume Increased");
+        if(mediaState!= null){
+            double current = mediaState.getVolume();
+            mediaState.setVolume(Math.min(current + 0.1, 1.0));
+        }
     }
 
     @FXML
@@ -91,7 +113,12 @@ public class MainWindow {
         PauseTransition pause = new PauseTransition(Duration.millis(100));
         pause.setOnFinished(e -> volDown.setStyle(""));
         pause.play();
-         statusDisplay.setText("Volume Decreased");
+        statusDisplay.setText("Volume Decreased");
+        if(mediaState!=null){
+            double current = mediaState.getVolume();
+            mediaState.setVolume(Math.max(current - 0.1, 0.0));
+        }
+
     }
 
     @FXML
@@ -102,6 +129,10 @@ public class MainWindow {
             btnWireless.setStyle("");
             System.out.println("HDMI MODE");
             statusDisplay.setText("HDMI Mode");
+            if(mediaState!= null){
+                mediaState.setSourceUrl(getClass().getResource("/images/hdmi_image.png").toExternalForm());
+
+            }
     }
 }
 
@@ -113,6 +144,10 @@ public class MainWindow {
             btnHdmi.setStyle("");
             System.out.println("WIRELESS MODE");
             statusDisplay.setText("WIRELESS");
+            if(mediaState!= null){
+                mediaState.setSourceUrl(getClass().getResource("/images/wireless_image.png").toExternalForm());
+
+            }
     }
 }
 

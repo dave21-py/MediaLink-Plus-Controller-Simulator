@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ProjectorWindowController" prefWidth="800" prefHeight="450" style="-fx-background-color: black;">
+<ImageView fx:id="imageView" fitHeight="450" fitWidth="800" preserveRatio="true"/>
+</StackPane> 
