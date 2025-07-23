@@ -1,40 +1,70 @@
-# MediaLink-Plus-Controller Simulator
-
 <p align="center">
-<img src="logo.png"
-width="400">
+  <!-- Replace with your own logo if you like -->
+  <img width="160px" src="logo.png" alt="MediaLink Simulator logo" />
+  <h2 align="center">MediaLink‑Plus Controller Simulator</h2>
+  <p align="center">A JavaFX clone of an Extron EB‑50 AV control panel.</p>
 </p>
 
-  ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white) <img src="https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black" /> <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" /> <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" /> <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />  
-
-
-## ❔Overview
-
-The MediaLink-Plus Controller Simulator is a JavaFX-based GUI Application that replicates the look and behavior of an Extron EB50-style AV control panel. Designed to simulate real-world audiovisual control systems, this interface allows users to interact with ON/OFF toggles, source selection (HDMI/Wireless), and volume controls with realistic behavior and visual feedback.
-
-## 👀 Demo 
-
-🎬 [Watch the demo]()
-
-### ✨ Simulator Screen
+<p align="center">
+  <!-- Shields.io badges -->
+  <img alt="Java"   src="https://img.shields.io/badge/Java-21+-ED8B00?logo=openjdk&logoColor=white" />
+  <img alt="JavaFX" src="https://img.shields.io/badge/JavaFX-23.0-FF0000?logo=java&logoColor=white" />
+  <img alt="Gradle" src="https://img.shields.io/badge/Gradle-8.x-02303A?logo=gradle&logoColor=white" />
+  <img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-0078D4?logo=visualstudiocode&logoColor=white" />
+  <img alt="Git"    src="https://img.shields.io/badge/Git-E44C30?logo=git&logoColor=white" />
+  <img alt="Stars"  src="https://img.shields.io/github/stars/bjucps209/group-project-team-jd?style=social" />
+</p>
 
 <p align="center">
-<img src="Screenshot 2025-06-01 at 10.09.28 PM.png"
-width="400">
+  <a href="demo.mp4">View Demo</a> ·
+  <a href="https://github.com/bjucps209/group-project-team-jd/issues/new?labels=bug&template=bug_report.md">Report Bug</a> ·
+  <a href="https://github.com/bjucps209/group-project-team-jd/issues/new?labels=enhancement&template=feature_request.md">Request Feature</a>
 </p>
+
+---
+
+## ❔ Overview
+
+The **MediaLink‑Plus Controller Simulator** is a JavaFX GUI that mirrors the look‑and‑feel of an Extron EB‑50‑style AV control panel. It lets users:
+
+* Toggle system **ON / OFF** with realistic LED feedback  
+* Switch sources between **HDMI** and **Wireless** inputs  
+* Adjust **Volume** via a virtual encoder ring  
+* Observe state changes in real‑time just like a physical controller  
+
+Built for AV‑technician training, UI prototyping, or as a portfolio showcase demonstrating JavaFX component design.
+
+---
+
+## 👀 Demo
+
+🎬 [Watch the demo](demo.mp4)
+
+### ✨ Simulator Screen
+<p align="center">
+  <img src="Screenshot 2025-06-01 at 10.09.28 PM.png" width="400" alt="Simulator Screen">
+</p>
+
+---
 
 #### System Requirements
+> Tested on macOS & Windows (Java 21, Gradle 8).
 
-> Both MacOS and Windows supported.
+---
 
-## Code
-
-### 🛠️ Environment Setup
+## 🛠️ Quick Start
 
 ```bash
+# 1) Clone the repo
 git clone https://github.com/bjucps209/group-project-team-jd.git
-```
+cd group-project-team-jd
 
+# 2) Build & run (macOS/Linux)
+./gradlew clean run
+
+#    Windows PowerShell
+.\gradlew.bat clean run
+```
 #### Gradle Setup
 
 ```bash
@@ -66,23 +96,3 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
 }
 ```
-
-## ✨ Credits
-
-> + David Geddam [github.com](https://github.com/dave21-py)
-
-## 🚀 Citation
-
-If you find our work useful, please consider citing:
-
-```
-title={MediaLink-Plus=Controller-Simulator},
-  author={David Geddam},
-  year={2025}
-}
-```
-
-## 📭 Contact
-
-For any questions, please raise a concern or contact us at
-+ David Geddam [linkedin.com](https://www.linkedin.com/in/david-geddam/)
